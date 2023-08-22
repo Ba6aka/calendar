@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calendar {
+  padding: 10px;
+  width: 400px;
+  margin: auto;
+  border: solid 1px #ffa500;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  align-self: center;
+}
+
+.days {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dates {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.date {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.date:hover {
+  background: linear-gradient(to bottom, #005BBF 50%, #FFD500 50%);
+}
